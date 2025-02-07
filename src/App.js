@@ -6,7 +6,7 @@ import Features from './components/Features';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 // import Basics from './pages/Basics';
-// import Contact from './pages/Contact';
+import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -24,7 +24,7 @@ function App() {
             </>
           } />
           {/* <Route path="/basics" element={<Basics />} /> */}
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

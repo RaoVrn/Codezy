@@ -1,0 +1,123 @@
+/* Contact.css - Dark Theme */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #181825; 
+    padding: 20px;
+  }
+  
+  .contact-card {
+    background: #1e1e2e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1dbf73;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .contact-description {
+    font-size: 1rem;
+    color: #d9e0ee; 
+    text-align: center;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-size: 1rem;
+    color: #d9e0ee;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Styling for all input fields */
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #252535;
+    border-radius: 8px;
+    background-color: #f0f0f0; 
+    color: #333; 
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Specific styling for the name input field */
+  .form-control#name {
+    background-color: #f0f0f0; 
+    color: #333; 
+  }
+  
+  /* Specific styling for the email input field */
+  .form-control#email {
+    background-color: #f0f0f0; 
+    color: #333; 
+  }
+  
+  /* Specific styling for the message box (textarea) */
+  .form-control#message {
+    background-color: #f0f0f0;
+    color: #333; 
+  }
+  
+  .form-control:focus {
+    border-color: #1dbf73; 
+    outline: none;
+  }
+  
+  .submit-button {
+    background-color: #1dbf73;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  
+  .submit-button:hover {
+    background-color: #16a34a; 
+    box-shadow: 0 4px 10px rgba(34, 197, 94, 0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-title {
+      font-size: 2rem;
+    }
+  
+    .contact-description {
+      font-size: 0.9rem;
+    }
+  
+    .form-control {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .submit-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  }

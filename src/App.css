@@ -1,0 +1,165 @@
+/* ChatGPT Dark Theme */
+body {
+    background-color: #181825; /* Deep navy-black */
+    color: #d9e0ee; /* Soft lavender white */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1e1e2e; /* Dark contrast */
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand, .nav-link {
+    color: #1dbf73 !important; /* Vibrant green */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #d9e0ee !important; /* Off-white on hover */
+    transition: 0.3s ease-in-out;
+}
+
+/* Buttons */
+.btn {
+    background-color: #1dbf73; /* Vibrant green */
+    color: #ffffff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #16a34a; /* Darker green */
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(34, 197, 94, 0.3);
+}
+
+/* Code Blocks */
+pre {
+    background-color: #1e1e2e;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #1dbf73;
+    font-size: 14px;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Copy Button */
+.copy-btn {
+    background-color: #1dbf73;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #17a864;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e2e;
+    color: #1dbf73;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: #1dbf73;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d9e0ee;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #181825;
+    color: #d9e0ee;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    opacity: 0.9;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #1e1e2e;
+    color: #d9e0ee;
+    padding: 80px 0;
+}
+
+.feature-card {
+    background-color: #252535;
+    border-radius: 12px;
+    padding: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card h3 {
+    color: #1dbf73;
+    margin-bottom: 15px;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    background-color: #181825;
+    color: #d9e0ee;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1.25rem;
+    }
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+    .cta-section p {
+        font-size: 1rem;
+    }
+}

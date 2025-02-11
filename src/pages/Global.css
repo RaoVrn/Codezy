@@ -1,0 +1,227 @@
+/* General Page Styling */
+.basics-page {
+    background-color: #ffffff; /* Bright white background */
+    color: #333333;            /* Dark text for readability */
+    padding: 60px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Heading Styles */
+.basics-page h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #007ACC;            /* Blue accent */
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.basics-page h2 {
+    font-size: 2rem;
+    color: #007ACC;            /* Blue accent */
+    margin-bottom: 15px;
+    border-left: 4px solid #007ACC;
+    padding-left: 10px;
+}
+
+/* Paragraph Styles */
+.basics-page p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+/* Code Block Styling */
+.basics-page pre {
+    background-color: #f4f4f4;  /* Light code block background */
+    padding: 12px;
+    border-radius: 6px;
+    color: #007ACC;             /* Blue accent for code */
+    overflow-x: auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+/* Nested comment styling inside code blocks */
+.basics-page .nested-comment {
+    color: #555555;  /* Set your desired comment color (red in this example) */
+    font-style: italic;
+}
+
+/* Inline Code */
+.basics-page code1 {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
+    background: rgba(0, 122, 204, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: #007ACC;
+}
+
+/* List Styles */
+.basics-page ul, 
+.basics-page ol {
+    padding-left: 25px;
+}
+
+.basics-page li {
+    margin-bottom: 8px;
+}
+
+/* Table Styling for Basics Page */
+.basics-page table {
+    width: 100%;
+    max-width: 700px; /* Constrained width for a compact, centered look */
+    margin: 20px 0;   /* Vertical margin with table centered by block-level behavior */
+    border-collapse: separate; /* Allow border-radius to work */
+    border-spacing: 0;
+    border-radius: 10px; /* Curved corners for a modern look */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff;
+}
+
+.basics-page th,
+.basics-page td {
+    border: 1px solid #e0e0e0;  /* Softer border for a cleaner look */
+    padding: 12px 16px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.basics-page th {
+    background-color: #007ACC;  /* Professional header background */
+    color: #ffffff;
+    font-size: 1.1rem;
+    text-transform: uppercase;  /* Emphasize header text */
+    letter-spacing: 0.5px;
+}
+
+.basics-page td {
+    font-size: 1rem;
+    background-color: #fafafa;  /* Light background for easier reading */
+}
+
+/* Fixed Column Widths for a Consistent Layout */
+.basics-page th:nth-child(1),
+.basics-page td:nth-child(1) {
+    width: 30%;
+}
+
+.basics-page th:nth-child(2),
+.basics-page td:nth-child(2) {
+    width: 20%;
+}
+
+.basics-page th:nth-child(3),
+.basics-page td:nth-child(3) {
+    width: 50%;
+}
+
+/* Button Styling */
+.basics-page .btn {
+    background-color: #007ACC;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.basics-page .btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+}
+
+/* Hover Effects */
+.basics-page pre:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .basics-page {
+        padding: 40px 15px;
+    }
+
+    .basics-page h1 {
+        font-size: 2.4rem;
+    }
+
+    .basics-page h2 {
+        font-size: 1.7rem;
+    }
+
+    .basics-page p {
+        font-size: 0.95rem;
+    }
+
+    .basics-page table {
+        max-width: 100%;
+    }
+}
+
+/* Contact Page Styling */
+.contact-description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333333;
+}
+
+.form-message {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #e0f7e9;
+    color: #007ACC;
+    font-weight: 600;
+}
+
+/* Center the contact form and add a subtle card look */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Spacing for each form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styles */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333333;
+}
+
+/* Input and textarea styling */
+.form-control {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007ACC;
+    outline: none;
+}

@@ -1,9 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import './Contact.css';
+import './Global.css';
 
 const Contact = () => {
   const form = useRef();
+  const [msgStatus, setMsgStatus] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -18,24 +19,24 @@ const Contact = () => {
       .then(
         (result) => {
           console.log('Email sent successfully!', result.text);
-          alert('Message sent successfully!');
-          e.target.reset();
+          setMsgStatus('Message sent successfully!');
+          form.current.reset();
         },
         (error) => {
           console.error('Failed to send email:', error.text);
-          alert('Failed to send message. Please try again.');
+          setMsgStatus('Failed to send message. Please try again.');
         }
       );
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-card">
-        <h1 className="contact-title">Contact Us</h1>
+    <div className="basics-page">
+      <h1 className="text-center mb-5">Contact Us</h1>
+      <div className="container">
         <p className="contact-description">
           If you have any questions or would like to get in touch, please fill out the form below.
         </p>
-
+        {msgStatus && <div className="form-message">{msgStatus}</div>}
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
             <label htmlFor="name" className="form-label">Name</label>
@@ -70,7 +71,7 @@ const Contact = () => {
               required
             ></textarea>
           </div>
-          <button type="submit" className="submit-button">Submit</button>
+          <button type="submit" className="btn">Submit</button>
         </form>
       </div>
     </div>

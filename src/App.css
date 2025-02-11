@@ -1,30 +1,40 @@
-/* ChatGPT Dark Theme */
+:root {
+    --background: #ffffff;      /* Bright white background */
+    --foreground: #333333;      /* Dark text for readability */
+    --accent: #007ACC;          /* Blue accent */
+    --dark: #f0f0f0;            /* Light gray for navigational elements */
+    --subtle: #eaeaea;          /* Subtle contrast for cards, etc. */
+    --code-bg: #f4f4f4;          /* Light code block background */
+}
+
+/* Global Styles */
 body {
-    background-color: #181825; /* Deep navy-black */
-    color: #d9e0ee; /* Soft lavender white */
+    background-color: var(--background);
+    color: var(--foreground);
     font-family: 'Inter', sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #1e1e2e; /* Dark contrast */
+    background-color: var(--dark);
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-brand, .nav-link {
-    color: #1dbf73 !important; /* Vibrant green */
+.navbar-brand,
+.nav-link {
+    color: var(--accent) !important;
     font-weight: bold;
 }
 
 .nav-link:hover {
-    color: #d9e0ee !important; /* Off-white on hover */
+    color: var(--foreground) !important;
     transition: 0.3s ease-in-out;
 }
 
 /* Buttons */
 .btn {
-    background-color: #1dbf73; /* Vibrant green */
+    background-color: var(--accent);
     color: #ffffff;
     border: none;
     padding: 12px 18px;
@@ -34,25 +44,25 @@ body {
 }
 
 .btn:hover {
-    background-color: #16a34a; /* Darker green */
+    background-color: #005fa3;
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(34, 197, 94, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 122, 204, 0.3);
 }
 
 /* Code Blocks */
 pre {
-    background-color: #1e1e2e;
+    background-color: var(--code-bg);
     padding: 1rem;
     border-radius: 8px;
-    color: #1dbf73;
+    color: var(--accent);
     font-size: 14px;
     overflow-x: auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Copy Button */
 .copy-btn {
-    background-color: #1dbf73;
+    background-color: var(--accent);
     color: white;
     border: none;
     padding: 6px 12px;
@@ -62,32 +72,49 @@ pre {
 }
 
 .copy-btn:hover {
-    background-color: #17a864;
+    background-color: #005fa3;
     transform: translateY(-2px);
 }
 
 /* Footer */
-footer {
-    background-color: #1e1e2e;
-    color: #1dbf73;
+.footer {
+    background-color: #f8f9fa; /* Light background */
+    padding: 1.5rem;
     text-align: center;
-    padding: 1rem;
+    border-top: 1px solid #e0e0e0;
 }
 
-footer a {
-    color: #1dbf73;
+.footer-text {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #333333;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-link {
+    color: #007acc; /* Blue accent */
     text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-footer a:hover {
-    color: #d9e0ee;
-    text-decoration: underline;
+.footer-link:hover {
+    transform: translateY(-3px);
+    color: #005fa3;
+}
+
+.footer-icon {
+    font-size: 24px;
 }
 
 /* Hero Section */
 .hero-section {
-    background-color: #181825;
-    color: #d9e0ee;
+    background-color: var(--background);
+    color: var(--foreground);
     padding: 100px 0;
     text-align: center;
 }
@@ -106,34 +133,34 @@ footer a:hover {
 
 /* Features Section */
 .features-section {
-    background-color: #1e1e2e;
-    color: #d9e0ee;
+    background-color: var(--dark);
+    color: var(--foreground);
     padding: 80px 0;
 }
 
 .feature-card {
-    background-color: #252535;
+    background-color: var(--subtle);
     border-radius: 12px;
     padding: 24px;
     transition: transform 0.3s ease, box-shadow 0.3s;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card h3 {
-    color: #1dbf73;
+    color: var(--accent);
     margin-bottom: 15px;
 }
 
 /* Call-to-Action Section */
 .cta-section {
-    background-color: #181825;
-    color: #d9e0ee;
+    background-color: var(--background);
+    color: var(--foreground);
     padding: 80px 0;
     text-align: center;
 }

@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
         <a className="navbar-brand fs-1 fw-bold d-flex align-items-center" href="/">
-          <img src={logo} alt="Codezy Logo" style={{ width: '70px', height: '70px', marginRight: '10px' }} />
+          <img src={logo} alt="Codezy Logo" style={{ width: '55px', height: '55px', marginRight: '10px' }} />
           {/* Codezy */}
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">

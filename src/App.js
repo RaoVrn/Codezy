@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-// import Basics from './pages/Basics';
+import Basics from './pages/Basics';
 import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -23,7 +23,7 @@ function App() {
               <CTA />
             </>
           } />
-          {/* <Route path="/basics" element={<Basics />} /> */}
+          <Route path="/basics" element={<Basics />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

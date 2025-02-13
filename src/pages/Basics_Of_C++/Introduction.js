@@ -1,6 +1,7 @@
 import React from 'react';
-import './Global.css';
-import CopyableCodeBlock from '../components/CopyableCodeBlock';
+import { Link } from 'react-router-dom';
+import '../../styles/Global.css';
+import CopyableCodeBlock from '../../components/CopyableCodeBlock';
 
 const Basics = () => {
   const helloWorldCode = `#include <iostream> // Header file for input and output operations
@@ -70,7 +71,7 @@ cout << name;`;
   return (
     <div className="basics-page">
       <h1 className="text-center mb-5">Basics of C++</h1>
-      {/* Added Sub-Main Heading */}
+      {/* Sub-Main Heading */}
       <h2
         className="ml-3 mb-5"
         style={{ fontSize: '2rem', fontWeight: '700'}}
@@ -258,7 +259,9 @@ cout << name;`;
 
         {/* Navigation Links */}
         <div className="text-center mt-5">
-          <a href="/advanced" className="btn btn-primary">Next: Advanced Topics</a>
+          <Link to="/Basics_Of_C++/BasicSyntax" className="btn btn-primary">
+            Next: Basic Syntax
+          </Link>
         </div>
       </div>
     </div>

@@ -5,7 +5,8 @@ import Hero from './components/Hero';
 import Features from './components/Features';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-import Basics from './pages/Basics';
+import Basics from './pages/Basics_Of_C++/Introduction';
+import BasicSyntax from './pages/Basics_Of_C++/BasicSyntax';
 import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
             </>
           } />
           <Route path="/basics" element={<Basics />} />
+          <Route path="/Basics_Of_C++/BasicSyntax" element={<BasicSyntax />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
